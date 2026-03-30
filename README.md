@@ -9,22 +9,34 @@ This chatbot uses real customer support data to generate accurate and profession
 📊 Uses real customer support dataset
 ⚡ Fast responses with optimized sampling
 🌐 Shareable web interface using Gradio
+
+
 🛠️ Tech Stack
 Python
 Groq API (LLaMA 3.1 model)
 Pandas
 Gradio
+
+
 📂 Dataset
 Bitext Sample Customer Support Dataset
 Contains:
 instruction → User query
 response → Expected reply
+
+
+
 ⚙️ Installation
 pip install groq pandas gradio
+
+
 🔑 Setup
 Get your API key from Groq
 Replace in code:
 client = Groq(api_key="YOUR_API_KEY")
+
+
+
 🧠 How It Works
 Load and clean dataset
 Select important columns (instruction, response)
@@ -32,10 +44,15 @@ Sample small dataset for faster API calls
 Build prompt using examples (few-shot learning)
 Send prompt to LLaMA model
 Display response using Gradio UI
+
+
 🧩 Project Structure
 ├── chatbot.ipynb
 ├── dataset.csv
 └── README.md
+
+
+
 ▶️ Run the Project
 demo.launch(share=True)
 Generates a public link to access chatbot
